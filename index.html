@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Πρόγραμμα Εργαζομένων</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="calendar" class="calendar">
+  <div class="day">
+    <h3>Δευτέρα</h3>
+    <div class="shift"></div>
+    <div class="shift"></div>
+  </div>
+  <div class="day">
+    <h3>Τρίτη</h3>
+    <div class="shift"></div>
+    <div class="shift"></div>
+  </div>
+  <div class="day">
+    <h3>Τετάρτη</h3>
+    <div class="shift"></div>
+    <div class="shift"></div>
+  </div>
+  <div class="day">
+    <h3>Πέμπτη</h3>
+    <div class="shift"></div>
+    <div class="shift"></div>
+  </div>
+  <div class="day">
+    <h3>Παρασκευή</h3>
+    <div class="shift"></div>
+    <div class="shift"></div>
+  </div>
+  <div class="day">
+    <h3>Σάββατο</h3>
+    <div class="shift"></div>
+    <div class="shift"></div>
+  </div>
+  <div class="day">
+    <h3>Κυριακή</h3>
+    <div class="shift"></div>
+    <div class="shift"></div>
+  </div>
+</div>
+
+<div id="employee-list">
+  <h3>Λίστα Εργαζομένων</h3>
+  <div class="employee-input-container">
+    <input type="text" id="employee-input" placeholder="Εισάγετε όνομα εργαζομένου">
+    <button id="add-employee-btn">Προσθήκη Εργαζομένου</button>
+  </div>
+  <div id="draggable-employees" class="draggable-container"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
