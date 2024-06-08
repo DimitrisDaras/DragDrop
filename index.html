@@ -1,58 +1,76 @@
 <!DOCTYPE html>
 <html lang="el">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Πρόγραμμα Εργαζομένων</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Πρόγραμμα Εργαζομένων</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
 </head>
 <body>
-
-<div id="calendar" class="calendar">
-  <div class="day">
-    <h3>Δευτέρα</h3>
-    <div class="shift"></div>
-    <div class="shift"></div>
-  </div>
-  <div class="day">
-    <h3>Τρίτη</h3>
-    <div class="shift"></div>
-    <div class="shift"></div>
-  </div>
-  <div class="day">
-    <h3>Τετάρτη</h3>
-    <div class="shift"></div>
-    <div class="shift"></div>
-  </div>
-  <div class="day">
-    <h3>Πέμπτη</h3>
-    <div class="shift"></div>
-    <div class="shift"></div>
-  </div>
-  <div class="day">
-    <h3>Παρασκευή</h3>
-    <div class="shift"></div>
-    <div class="shift"></div>
-  </div>
-  <div class="day">
-    <h3>Σάββατο</h3>
-    <div class="shift"></div>
-    <div class="shift"></div>
-  </div>
-  <div class="day">
-    <h3>Κυριακή</h3>
-    <div class="shift"></div>
-    <div class="shift"></div>
-  </div>
+<!-- Header -->
+<div class="header">
+    <h4>Drag Drop</h4>
 </div>
 
-<div id="employee-list">
-  <h3>Λίστα Εργαζομένων</h3>
-  <div class="employee-input-container">
-    <input type="text" id="employee-input" placeholder="Εισάγετε όνομα εργαζομένου">
-    <button id="add-employee-btn">Προσθήκη Εργαζομένου</button>
-  </div>
-  <div id="draggable-employees" class="draggable-container"></div>
+<!-- Main Page -->
+<div class="homepage">
+    <div>
+        <h2>Βάρδιες</h2>
+        <!-- Employees Calendar -->
+        <div id="calendar" class="calendar">
+            <div class="day">
+                <h3>Δευτέρα</h3>
+                <div class="shift"></div>
+                <div class="shift"></div>
+            </div>
+            <div class="day">
+                <h3>Τρίτη</h3>
+                <div class="shift"></div>
+                <div class="shift"></div>
+            </div>
+            <div class="day">
+                <h3>Τετάρτη</h3>
+                <div class="shift"></div>
+                <div class="shift"></div>
+            </div>
+            <div class="day">
+                <h3>Πέμπτη</h3>
+                <div class="shift"></div>
+                <div class="shift"></div>
+            </div>
+            <div class="day">
+                <h3>Παρασκευή</h3>
+                <div class="shift"></div>
+                <div class="shift"></div>
+            </div>
+            <div class="day">
+                <h3>Σάββατο</h3>
+                <div class="shift"></div>
+                <div class="shift"></div>
+            </div>
+            <div class="day">
+                <h3>Κυριακή</h3>
+                <div class="shift"></div>
+                <div class="shift"></div>
+            </div>
+        </div>
+    </div>
+    <button id="download-btn">Κατεβάστε το Πρόγραμμα</button>
+    <!-- Add Employee -->
+    <div id="employee-list">
+        <h3>Λίστα Εργαζομένων</h3>
+        <div class="employee-input-container">
+            <input type="text" id="employee-input" placeholder="Εισάγετε όνομα εργαζομένου">
+            <button id="add-employee-btn">Προσθήκη Εργαζομένου</button>
+        </div>
+        <div id="draggable-employees" class="draggable-container"></div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>© <span id="current-year"></span> Dimitris Daras. All Rights Reserved</p>
 </div>
 
 <script src="script.js"></script>
